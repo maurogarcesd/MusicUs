@@ -1,14 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package co.edu.udea.musicus;
 
 /**
- *
- * @author Big Computer
+ * @version 1.0
+ * @created 01-dic-2014 09:50:06 p.m.
  */
 public class Jugador {
-    
+
+	private Fama fama;
+	private String nombre;
+	private Puntos puntos;
+	public Incentivo incentivo;
+
+	public Jugador(){
+
+	}
+
 }

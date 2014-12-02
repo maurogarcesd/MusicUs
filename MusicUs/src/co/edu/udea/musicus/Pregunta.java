@@ -7,12 +7,11 @@ import java.util.ArrayList;
  * @version 1.0
  * @created 01-dic-2014 09:50:07 p.m.
  */
-public class Nivel {
+public class Pregunta {
 
-	private ArrayList<Pregunta> preguntas;
-	private Tema tema;
+	private ArrayList<Respuesta> respuesta;
 
-	public Nivel(){
+	public Pregunta(){
 
 	}
 
