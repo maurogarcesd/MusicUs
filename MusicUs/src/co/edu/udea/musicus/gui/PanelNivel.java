@@ -7,20 +7,18 @@ package co.edu.udea.musicus.gui;
 
 /**
  *
- * @author mateo1235
+ * @author twx
  */
-public class Ventana extends javax.swing.JFrame {
+public class PanelNivel extends javax.swing.JPanel {
 
-    private PanelNivel panelNivel;
-    private PanelInicio panelInicio;
+    private PanelPregunta panelPregunta;
+    private PanelResumen panelResumen;
 
     /**
-     * Creates new form Ventana
+     * Creates new form PanelNivel
      */
-    public Ventana() {
+    public PanelNivel() {
         initComponents();
-        setLocationRelativeTo(null);
-        setVisible(true);
     }
 
     /**
@@ -31,14 +29,21 @@ public class Ventana extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("MusicUs");
-        getContentPane().setLayout(new java.awt.CardLayout());
+        setBorder(javax.swing.BorderFactory.createTitledBorder("Nivel: 1/2/3 - Tema: Pentagrama/Claves/Notas"));
 
-        pack();
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 390, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 278, Short.MAX_VALUE)
+        );
     }// </editor-fold>//GEN-END:initComponents
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
