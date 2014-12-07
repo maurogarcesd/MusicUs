@@ -33,13 +33,20 @@ public static  void  main(String[] args) throws Exception{
         if(node.getNodeType() == Node.ELEMENT_NODE){
             Element element = (Element)node;
            System.out.println("Tema de Estudio  " + element.getAttribute("id"));
-            NodeList list2= element.getChildNodes();
+           
+           NodeList list2= element.getChildNodes();
              for (int j = 0; j < list2.getLength(); j++){
             Node node2 =list2.item(j);  
             if(node2.getNodeType() == Node.ELEMENT_NODE){
             Element element2 = (Element)node2;
-            System.out.println("pregunta");
-            System.out.println(element2.getNodeValue());
+//            System.out.println("pregunta");
+            System.out.println(element2.getAttribute("id"));
+            System.out.println(element2.getElementsByTagName("enunciado").item(0).getTextContent());
+            System.out.println(element2.getElementsByTagName("respuesta").item(0).getTextContent());
+            System.out.println(element2.getElementsByTagName("respuesta").item(1).getTextContent());
+            System.out.println(element2.getElementsByTagName("respuesta").item(2).getTextContent());
+            System.out.println(element2.getElementsByTagName("respuesta").item(3).getTextContent());
+          
 //            NodeList list3= element.getChildNodes();
 //            Node node3 =list3.item(j);  
 //            if(node3.getNodeType() == Node.ELEMENT_NODE){
