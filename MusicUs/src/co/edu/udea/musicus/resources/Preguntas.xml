@@ -1,5 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
 <temas>
-	<tema nombre='Pentagrama'>
+	<tema id="Pentagrama">
 		<pregunta>
 			<id>1</id>
 			<enunciado>Observa con cuidado este pentagrama, dinos si esta bien Dibujado?</enunciado>
@@ -56,7 +57,7 @@
 		</pregunta>	
 	</tema>
 	
-	<tema nombre='Claves'>
+	<tema id="Claves">
 		<pregunta>
 			<id>1</id>
 			<enunciado>Identifica la siguiente clave</enunciado>
@@ -148,7 +149,7 @@
 		</pregunta>	
 	</tema>
 	
-	<tema nombre='Notas'>
+	<tema id="Notas">
 		<pregunta>
 			<id>1</id>
 			<enunciado>Identifica la nota musical que se encuentra dibujada en el siguiente pentagrama</enunciado>
@@ -333,4 +334,3 @@
 </temas>
 
 
->
