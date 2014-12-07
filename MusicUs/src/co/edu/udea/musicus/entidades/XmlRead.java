@@ -20,7 +20,7 @@ public class XmlRead {
 public static  void  main(String[] args) throws Exception{
 
     
-    File xmFile = new File("D:\\Preguntas.xml");
+    File xmFile = new File("src\\co\\edu\\udea\\musicus\\resources\\Preguntas.xml");
     DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
     DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
     Document document = documentBuilder.parse(xmFile);
