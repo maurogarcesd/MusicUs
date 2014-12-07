@@ -146,7 +146,61 @@
 			<respuesta correcta='false'>
 				<texto>Clave de do en tercera</texto>
 			</respuesta>
-		</pregunta>	
+		</pregunta>
+		
+			<pregunta>
+		 <id>6</id>
+		  	<enunciado>Observa con atencion la siguiente clave y di cual es</enunciado>
+			<imagen>26.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>Clave de sol en cuarta</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Clave de fa en cuarta</texto>
+			</respuesta>
+			<respuesta correcta='true'>
+				<texto>Clave de Do en primera</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Clave de do en tercera</texto>
+			</respuesta>
+		</pregunta>
+		
+			<pregunta>
+		 <id>7</id>
+		  	<enunciado>Observa con atencion la siguiente clave y di cual es</enunciado>
+			<imagen>27.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>Clave de sol en cuarta</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Clave de fa en cuarta</texto>
+			</respuesta>
+			<respuesta correcta='true'>
+				<texto>Clave de Do en primera</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Clave de do en tercera</texto>
+			</respuesta>
+		</pregunta>
+		
+			<pregunta>
+		 <id>8</id>
+		  	<enunciado>Observa con atencion la siguiente clave y di cual es</enunciado>
+			<imagen>28.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>Clave de sol en cuarta</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Clave de fa en cuarta</texto>
+			</respuesta>
+			<respuesta correcta='true'>
+				<texto>Clave de Do en primera</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Clave de do en tercera</texto>
+			</respuesta>
+		</pregunta>
 	</tema>
 	
 	<tema id="Notas">
@@ -327,6 +381,92 @@
 			</respuesta>
 			<respuesta correcta='false'>
 				<texto>esta es verdadera</texto>
+			</respuesta>
+		</pregunta>
+		
+		<pregunta>
+			<id>11</id>
+			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
+			<imagen>41.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>La</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Sol</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Fa</texto>
+			</respuesta>
+                        <respuesta correcta='true'>
+				<texto>Re</texto>
+			</respuesta>
+		</pregunta>	
+		<pregunta>
+			<id>12</id>
+			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
+			<imagen>42.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>La</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Sol</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Fa</texto>
+			</respuesta>
+                        <respuesta correcta='true'>
+				<texto>Re</texto>
+			</respuesta>
+		</pregunta>	
+		<pregunta>
+			<id>13</id>
+			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
+			<imagen>43.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>La</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Sol</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Fa</texto>
+			</respuesta>
+                        <respuesta correcta='true'>
+				<texto>Re</texto>
+			</respuesta>
+		</pregunta>	
+		<pregunta>
+			<id>14</id>
+			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
+			<imagen>44.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>La</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Sol</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Fa</texto>
+			</respuesta>
+                        <respuesta correcta='true'>
+				<texto>Re</texto>
+			</respuesta>
+		</pregunta>	
+		<pregunta>
+			<id>15</id>
+			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
+			<imagen>45.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>La</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Sol</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Fa</texto>
+			</respuesta>
+                        <respuesta correcta='true'>
+				<texto>Re</texto>
 			</respuesta>
 		</pregunta>	
 		
