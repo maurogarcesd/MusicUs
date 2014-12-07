@@ -10,6 +10,8 @@ import java.util.ArrayList;
 public class Pregunta {
 
 	private ArrayList<Respuesta> respuesta;
+        private String enunciado;
+        private int id;
 
 	public Pregunta(){
 
