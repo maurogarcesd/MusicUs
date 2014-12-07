@@ -332,37 +332,38 @@
 		
 		<pregunta>
 			<id>8</id>
-			<enunciado>blah blah blah</enunciado>
+			<enunciado>Elige la nota correspondiente al pentagrama</enunciado>
 			<imagen>38.jpg</imagen>
+			
+			<respuesta correcta='false'>
+				<texto>Fa</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Sol</texto>
+			</respuesta>
 			<respuesta correcta='true'>
-				<texto>esta es verdadera</texto>
+				<texto>La</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
-			</respuesta>
-			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
-			</respuesta>
-			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
+				<texto>Si</texto>
 			</respuesta>
 		</pregunta>	
 		
 		<pregunta>
 			<id>9</id>
-			<enunciado>blah blah blah</enunciado>
+			<enunciado>Elige la nota correspondiente al pentagrama</enunciado>
 			<imagen>39.jpg</imagen>
 			<respuesta correcta='true'>
-				<texto>esta es verdadera</texto>
+				<texto>Do</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
+				<texto>Fa</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
+				<texto>Re</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
+				<texto>Sol</texto>
 			</respuesta>
 		</pregunta>	
 		
@@ -371,16 +372,16 @@
 			<enunciado>blah blah blah</enunciado>
 			<imagen>40.jpg</imagen>
 			<respuesta correcta='true'>
-				<texto>esta es verdadera</texto>
+				<texto>Do</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
+				<texto>Fa</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
+				<texto>Sol</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
+				<texto>La</texto>
 			</respuesta>
 		</pregunta>
 		
@@ -398,7 +399,7 @@
 				<texto>Fa</texto>
 			</respuesta>
                         <respuesta correcta='true'>
-				<texto>Re</texto>
+				<texto>Si</texto>
 			</respuesta>
 		</pregunta>	
 		<pregunta>
@@ -411,10 +412,10 @@
 			<respuesta correcta='false'>
 				<texto>Sol</texto>
 			</respuesta>
-			<respuesta correcta='false'>
-				<texto>Fa</texto>
+			<respuesta correcta='true'>
+				<texto>Mi</texto>
 			</respuesta>
-                        <respuesta correcta='true'>
+                        <respuesta correcta='false'>
 				<texto>Re</texto>
 			</respuesta>
 		</pregunta>	
@@ -423,15 +424,15 @@
 			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
 			<imagen>43.jpg</imagen>
 			<respuesta correcta='false'>
-				<texto>La</texto>
+				<texto>Do</texto>
 			</respuesta>
 			<respuesta correcta='false'>
 				<texto>Sol</texto>
 			</respuesta>
-			<respuesta correcta='false'>
+			<respuesta correcta='true'>
 				<texto>Fa</texto>
 			</respuesta>
-                        <respuesta correcta='true'>
+                        <respuesta correcta='false'>
 				<texto>Re</texto>
 			</respuesta>
 		</pregunta>	
@@ -440,13 +441,13 @@
 			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
 			<imagen>44.jpg</imagen>
 			<respuesta correcta='false'>
-				<texto>La</texto>
+				<texto>Fa</texto>
 			</respuesta>
-			<respuesta correcta='false'>
+			<respuesta correcta='true'>
 				<texto>Sol</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>Fa</texto>
+				<texto>Mi</texto>
 			</respuesta>
                         <respuesta correcta='true'>
 				<texto>Re</texto>
@@ -457,16 +458,17 @@
 			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
 			<imagen>45.jpg</imagen>
 			<respuesta correcta='false'>
-				<texto>La</texto>
+				<texto>Do</texto>
 			</respuesta>
-			<respuesta correcta='false'>
-				<texto>Sol</texto>
-			</respuesta>
+			
 			<respuesta correcta='false'>
 				<texto>Fa</texto>
 			</respuesta>
-                        <respuesta correcta='true'>
+                        <respuesta correcta='false'>
 				<texto>Re</texto>
+			</respuesta>
+			<respuesta correcta='true'>
+				<texto>Sol</texto>
 			</respuesta>
 		</pregunta>	
 		
