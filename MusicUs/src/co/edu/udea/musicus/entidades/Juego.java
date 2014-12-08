@@ -5,16 +5,15 @@ import java.util.ArrayList;
 /**
  * @author FelipeWin
  * @version 1.0
- * @created 01-dic-2014 09:50:07 p.m.
+ * @created 08-dic-2014 17:01:54
  */
 public class Juego {
 
-	private Jugador jugador;
-	private ArrayList<Nivel> niveles;
-	public Incentivo incentivo;
+    private ArrayList<Fama> famas;
+    private Jugador jugador;
+    private ArrayList<Nivel> niveles;
 
-	public Juego(){
+    public Juego() {
 
-	}
-
+    }
 }

@@ -5,16 +5,17 @@ import java.util.ArrayList;
 /**
  * @author FelipeWin
  * @version 1.0
- * @created 01-dic-2014 09:50:07 p.m.
+ * @created 08-dic-2014 17:01:58
  */
 public class Tema {
-    private String id;
-   
-    private ArrayList<Pregunta> preguntas;
-	public Tema(){
-            preguntas = new ArrayList<>();
 
-	}
+    private String id;
+    private ArrayList<Pregunta> preguntas;
+    private String resumen;
+
+    public Tema() {
+
+    }
 
     /**
      * @return the id
@@ -29,7 +30,6 @@ public class Tema {
     public void setId(String id) {
         this.id = id;
     }
-  
 
     /**
      * @return the preguntas
@@ -38,4 +38,17 @@ public class Tema {
         return preguntas;
     }
 
+    /**
+     * @return the resumen
+     */
+    public String getResumen() {
+        return resumen;
+    }
+
+    /**
+     * @param resumen the resumen to set
+     */
+    public void setResumen(String resumen) {
+        this.resumen = resumen;
+    }
 }

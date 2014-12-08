@@ -5,23 +5,16 @@ import java.util.ArrayList;
 /**
  * @author FelipeWin
  * @version 1.0
- * @created 01-dic-2014 09:50:07 p.m.
+ * @created 08-dic-2014 17:01:57
  */
 public class Pregunta {
 
-	private ArrayList<Respuesta> respuestas;
-        private String enunciado;
-        private String id;
+    private String id;
+    private String enunciado;
+    private ArrayList<Respuesta> respuestas;
 
-	public Pregunta(){
-            respuestas =new ArrayList<>();
-	}
+    public Pregunta() {
 
-    /**
-     * @return the respuesta
-     */
-    public ArrayList<Respuesta> getRespuestas() {
-        return respuestas;
     }
 
     /**
@@ -39,6 +32,13 @@ public class Pregunta {
     }
 
     /**
+     * @return the respuestas
+     */
+    public ArrayList<Respuesta> getRespuestas() {
+        return respuestas;
+    }
+
+    /**
      * @return the id
      */
     public String getId() {
@@ -51,5 +51,4 @@ public class Pregunta {
     public void setId(String id) {
         this.id = id;
     }
-
 }

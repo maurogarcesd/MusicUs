@@ -3,21 +3,35 @@ package co.edu.udea.musicus.entidades;
 /**
  * @author FelipeWin
  * @version 1.0
- * @created 01-dic-2014 09:50:07 p.m.
+ * @created 08-dic-2014 17:01:58
  */
 public class Respuesta {
 
-	private String correcta;
-        private String texto;
+    private String correcta;
+    private String textoRespuesta;
 
-	public Respuesta(){
+    public Respuesta() {
 
-	}
+    }
+
+    /**
+     * @return the textoRespuesta
+     */
+    public String getTextoRespuesta() {
+        return textoRespuesta;
+    }
+
+    /**
+     * @param textoRespuesta the textoRespuesta to set
+     */
+    public void setTextoRespuesta(String textoRespuesta) {
+        this.textoRespuesta = textoRespuesta;
+    }
 
     /**
      * @return the correcta
      */
-    public String isCorrecta() {
+    public String getCorrecta() {
         return correcta;
     }
 
@@ -27,19 +41,4 @@ public class Respuesta {
     public void setCorrecta(String correcta) {
         this.correcta = correcta;
     }
-
-    /**
-     * @return the texto
-     */
-    public String getTexto() {
-        return texto;
-    }
-
-    /**
-     * @param texto the texto to set
-     */
-    public void setTexto(String texto) {
-        this.texto = texto;
-    }
-
 }

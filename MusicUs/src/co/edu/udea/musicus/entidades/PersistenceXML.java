@@ -1,11 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package co.edu.udea.musicus.entidades;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -14,34 +10,32 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 /**
- *
- * @author Big Computer
+ * @author teo
+ * @version 1.0
+ * @created 08-dic-2014 17:02:02
  */
-public class XmlRead {
+public class PersistenceXML {
 
-    static NodeList listaTemas;
-//    static NodeList listaPreguntas;
-//    static NodeList listaRespuesta;
+    public PersistenceXML() {
 
-    public static void main(String[] args) throws Exception {
+    }
 
+    public ArrayList<Tema> getTemas() {
+        NodeList listaTemas = null;
         try {
             File xmFile = new File("Preguntas.xml");
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
             Document document = documentBuilder.parse(xmFile);
             listaTemas = document.getElementsByTagName("tema");
-
         } catch (ParserConfigurationException ex) {
             System.out.println(ex);
+        } catch (SAXException | IOException ex) {
+            System.out.println(ex);
         }
-        System.out.println("" + getTemas().toString());
-
-    }
-
-    public static ArrayList<Tema> getTemas() {
         ArrayList<Tema> temas = new ArrayList<>();
         Tema tema = null;
         Pregunta pregunta = null;
@@ -71,7 +65,7 @@ public class XmlRead {
 
                         for (int k = 0; k < respuestas; k++) {
                             respuesta = new Respuesta();
-                            respuesta.setTexto(elPregunta.getElementsByTagName("respuesta").item(k).getTextContent());
+                            respuesta.setTextoRespuesta(elPregunta.getElementsByTagName("respuesta").item(k).getTextContent());
                             respuesta.setCorrecta(elPregunta.getElementsByTagName("respuesta").item(k).getAttributes().getNamedItem("correcta").getTextContent());
                             pregunta.getRespuestas().add(respuesta);
                         }
@@ -83,6 +77,5 @@ public class XmlRead {
             temas.add(tema);
         }
         return temas;
-
     }
 }
