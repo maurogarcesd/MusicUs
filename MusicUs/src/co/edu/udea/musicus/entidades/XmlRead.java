@@ -39,6 +39,7 @@ public class XmlRead {
         }
         getTemas();
 
+        
     }
 
     public static ArrayList<Tema> getTemas() {
