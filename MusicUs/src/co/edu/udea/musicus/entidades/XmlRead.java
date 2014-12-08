@@ -46,13 +46,13 @@ public class XmlRead {
         Tema tema = null;
         Pregunta pregunta = null;
         Respuesta respuesta = null;
-        System.out.println(listaTemas.getLength());
+        
 
         for (int i = 0; i < listaTemas.getLength(); i++) {
             Node nodoTemas = listaTemas.item(i);
             if (nodoTemas.getNodeType() == Node.ELEMENT_NODE) {
+                
                 Element elTema = (Element) nodoTemas;
-                System.out.println("Tema de Estudio " + elTema.getAttribute("id"));
                 tema = new Tema();
                 tema.setId(elTema.getAttribute("id"));
                 NodeList listaPreguntas = elTema.getElementsByTagName("pregunta");
@@ -61,9 +61,6 @@ public class XmlRead {
                     Node nodoPreguntas = listaPreguntas.item(j);
                     if (nodoPreguntas.getNodeType() == Node.ELEMENT_NODE) {
                         Element elPregunta = (Element) nodoPreguntas;
-
-                        System.out.println(elPregunta.getAttribute("id"));
-                        System.out.println("se agrego " + elPregunta.getElementsByTagName("enunciado").item(0).getTextContent());
 
                         pregunta = new Pregunta();
                         pregunta.setId(elPregunta.getAttribute("id"));
@@ -77,7 +74,6 @@ public class XmlRead {
                             respuesta = new Respuesta();
                             respuesta.setTexto(elPregunta.getElementsByTagName("respuesta").item(k).getTextContent());
                             respuesta.setCorrecta(elPregunta.getElementsByTagName("respuesta").item(k).getAttributes().getNamedItem("correcta").getTextContent());
-                            System.out.println("add respuesta" + elPregunta.getElementsByTagName("respuesta").item(k).getTextContent() + elPregunta.getElementsByTagName("respuesta").item(k).getAttributes().getNamedItem("correcta").getTextContent());
                             pregunta.getRespuestas().add(respuesta);
                         }
 
