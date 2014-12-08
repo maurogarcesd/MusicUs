@@ -10,7 +10,7 @@ package co.edu.udea.musicus.gui;
  * @author mateo1235
  */
 public class Ventana extends javax.swing.JFrame {
-
+    
     private PanelNivel panelNivel;
     private PanelInicio panelInicio;
 
@@ -19,6 +19,9 @@ public class Ventana extends javax.swing.JFrame {
      */
     public Ventana() {
         initComponents();
+        panelInicio = new PanelInicio();
+        panelNivel = new PanelNivel();
+        setContentPane(panelInicio);
         setLocationRelativeTo(null);
         setVisible(true);
     }

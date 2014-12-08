@@ -18,6 +18,8 @@ public class PanelNivel extends javax.swing.JPanel {
      * Creates new form PanelNivel
      */
     public PanelNivel() {
+        panelPregunta = new PanelPregunta();
+        panelResumen = new PanelResumen();
         initComponents();
     }
 
