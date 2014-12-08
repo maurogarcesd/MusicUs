@@ -1,10 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
 <temas>
-	<tema nombre='Pentagrama'>
-		<pregunta>
-			<id>1</id>
+	<tema id="Pentagrama">
+		<pregunta id="1">
+			
 			<enunciado>Observa con cuidado este pentagrama, dinos si esta bien Dibujado?</enunciado>
 			<imagen>11.jpg</imagen>
-			<respuesta correcta='true'>
+			<respuesta correcta="true">
 				<texto>Esta mal dibujado debe tener 5 lineas</texto>
 			</respuesta>
 			<respuesta correcta='false'>
@@ -19,8 +20,7 @@
 						
 		</pregunta>	
 				
-		<pregunta>
-			<id>2</id>
+		<pregunta id="2">
 			<enunciado>Observa con cuidado este pentagrama, dinos si esta bien Dibujado? repetidaaaaa</enunciado>
 			<imagen>11.jpg</imagen>
 			<respuesta correcta='true'>
@@ -37,8 +37,7 @@
 			</respuesta>
 		</pregunta>	
 		
-		<pregunta>
-			<id>3</id>
+		<pregunta id="3">
 			<enunciado>Observa con cuidado este pentagrama, dinos si esta bien Dibujado? repetidaaaaa</enunciado>
 			<imagen>11.jpg</imagen>
 			<respuesta correcta='true'>
@@ -56,9 +55,8 @@
 		</pregunta>	
 	</tema>
 	
-	<tema nombre='Claves'>
-		<pregunta>
-			<id>1</id>
+	<tema id="Claves">
+		<pregunta id="1">
 			<enunciado>Identifica la siguiente clave</enunciado>
 			<imagen>21.jpg</imagen>
 			<respuesta correcta='true'>
@@ -75,8 +73,7 @@
 			</respuesta>
 		</pregunta>	
 		
-		<pregunta>
-		 <id>2</id>
+		<pregunta id="2">
 			<enunciado>Identifica la siguiente clave</enunciado>
 			<imagen>22.jpg</imagen>
 			<respuesta correcta='false'>
@@ -93,8 +90,7 @@
 			</respuesta>
 		</pregunta>	
 		
-		<pregunta>
-		 <id>3</id>
+		<pregunta id="3">
 		 	<enunciado>Observa con atención y dinos que clave es? </enunciado>
 			<imagen>23.jpg</imagen>
 			<respuesta correcta='false'>
@@ -111,8 +107,7 @@
 			</respuesta>
 		</pregunta>	
 		
-		<pregunta>
-		 <id>4</id>
+		<pregunta id="4">
 			<enunciado>La siguiente clave es?</enunciado>
 			<imagen>24.jpg</imagen>
 			<respuesta correcta='false'>
@@ -129,8 +124,7 @@
 			</respuesta>
 		</pregunta>	
 		
-		<pregunta>
-		 <id>5</id>
+		<pregunta id="5">
 		  	<enunciado>Observa con atencion la siguiente clave y di cual es</enunciado>
 			<imagen>25.jpg</imagen>
 			<respuesta correcta='false'>
@@ -145,12 +139,62 @@
 			<respuesta correcta='false'>
 				<texto>Clave de do en tercera</texto>
 			</respuesta>
-		</pregunta>	
+		</pregunta>
+		
+		<pregunta id="6">
+		  	<enunciado>Observa con atencion la siguiente clave y di cual es</enunciado>
+			<imagen>26.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>Clave de sol en cuarta</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Clave de fa en cuarta</texto>
+			</respuesta>
+			<respuesta correcta='true'>
+				<texto>Clave de Do en primera</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Clave de do en tercera</texto>
+			</respuesta>
+		</pregunta>
+		
+			<pregunta id="7">
+		  	<enunciado>Observa con atencion la siguiente clave y di cual es</enunciado>
+			<imagen>27.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>Clave de sol en cuarta</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Clave de fa en cuarta</texto>
+			</respuesta>
+			<respuesta correcta='true'>
+				<texto>Clave de Do en primera</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Clave de do en tercera</texto>
+			</respuesta>
+		</pregunta>
+		
+			<pregunta id="8">
+		  	<enunciado>Observa con atencion la siguiente clave y di cual es</enunciado>
+			<imagen>28.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>Clave de sol en cuarta</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Clave de fa en cuarta</texto>
+			</respuesta>
+			<respuesta correcta='true'>
+				<texto>Clave de Do en primera</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Clave de do en tercera</texto>
+			</respuesta>
+		</pregunta>
 	</tema>
 	
-	<tema nombre='Notas'>
-		<pregunta>
-			<id>1</id>
+	<tema id="Notas">
+		<pregunta id="1">
 			<enunciado>Identifica la nota musical que se encuentra dibujada en el siguiente pentagrama</enunciado>
 			<imagen>31.jpg</imagen>
 			<respuesta correcta='false'>
@@ -167,8 +211,7 @@
 			</respuesta>
 		</pregunta>	
 		
-		<pregunta>
-			<id>2</id>
+		<pregunta id="2">
                         <enunciado>Identifica la nota musical del pentagrama:</enunciado>
 			<imagen>32.jpg</imagen>
 			<respuesta correcta='true'>
@@ -185,8 +228,7 @@
 			</respuesta>
 		</pregunta>	
 		
-		<pregunta>
-			<id>3</id>
+		<pregunta id="3">
 			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
 			<imagen>33.jpg</imagen>
 			<respuesta correcta='true'>
@@ -203,8 +245,7 @@
 			</respuesta>
 		</pregunta>	
 			
-                <pregunta>
-			<id>4</id>
+                <pregunta id="4">
 			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
 			<imagen>34.jpg</imagen>
 			<respuesta correcta='false'>
@@ -221,8 +262,7 @@
 			</respuesta>
 		</pregunta>	
 				
-		<pregunta>
-			<id>5</id>
+		<pregunta id="5">
                          <enunciado>Identifica la nota musical:</enunciado>
 			<imagen>35.jpg</imagen>
 			<respuesta correcta='false'>
@@ -239,8 +279,7 @@
 			</respuesta>
 		</pregunta>	
 		
-		 <pregunta>
-			<id>6</id>
+		 <pregunta id="6">
 			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
 			<imagen>36.jpg</imagen>
 			<respuesta correcta='false'>
@@ -257,8 +296,7 @@
 			</respuesta>
 		</pregunta>
 		
-		 <pregunta>
-			<id>7</id>
+		 <pregunta id="7">
 			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
 			<imagen>37.jpg</imagen>
 			<respuesta correcta='false'>
@@ -275,57 +313,142 @@
 			</respuesta>
 		</pregunta>	
 		
-		<pregunta>
-			<id>8</id>
-			<enunciado>blah blah blah</enunciado>
+		<pregunta id="8">
+			<enunciado>Elige la nota correspondiente al pentagrama</enunciado>
 			<imagen>38.jpg</imagen>
+			
+			<respuesta correcta='false'>
+				<texto>Fa</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Sol</texto>
+			</respuesta>
 			<respuesta correcta='true'>
-				<texto>esta es verdadera</texto>
+				<texto>La</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
-			</respuesta>
-			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
-			</respuesta>
-			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
+				<texto>Si</texto>
 			</respuesta>
 		</pregunta>	
 		
-		<pregunta>
-			<id>9</id>
-			<enunciado>blah blah blah</enunciado>
+		<pregunta id="9">
+			<enunciado>Elige la nota correspondiente al pentagrama</enunciado>
 			<imagen>39.jpg</imagen>
 			<respuesta correcta='true'>
-				<texto>esta es verdadera</texto>
+				<texto>Do</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
+				<texto>Fa</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
+				<texto>Re</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
+				<texto>Sol</texto>
 			</respuesta>
 		</pregunta>	
 		
-		<pregunta>
-			<id>10</id>
+		<pregunta id="10">
 			<enunciado>blah blah blah</enunciado>
 			<imagen>40.jpg</imagen>
 			<respuesta correcta='true'>
-				<texto>esta es verdadera</texto>
+				<texto>Do</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
+				<texto>Fa</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
+				<texto>Sol</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>esta es verdadera</texto>
+				<texto>La</texto>
+			</respuesta>
+		</pregunta>
+		
+		<pregunta id="11">
+			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
+			<imagen>41.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>La</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Sol</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Fa</texto>
+			</respuesta>
+                        <respuesta correcta='true'>
+				<texto>Si</texto>
+			</respuesta>
+		</pregunta>	
+		
+		<pregunta id="12">
+			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
+			<imagen>42.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>La</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Sol</texto>
+			</respuesta>
+			<respuesta correcta='true'>
+				<texto>Mi</texto>
+			</respuesta>
+                        <respuesta correcta='false'>
+				<texto>Re</texto>
+			</respuesta>
+		</pregunta>
+	
+		<pregunta id="13">
+			<id>13</id>
+			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
+			<imagen>43.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>Do</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Sol</texto>
+			</respuesta>
+			<respuesta correcta='true'>
+				<texto>Fa</texto>
+			</respuesta>
+                        <respuesta correcta='false'>
+				<texto>Re</texto>
+			</respuesta>
+		</pregunta>
+	
+		<pregunta id="14">
+			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
+			<imagen>44.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>Fa</texto>
+			</respuesta>
+			<respuesta correcta='true'>
+				<texto>Sol</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Mi</texto>
+			</respuesta>
+                        <respuesta correcta='true'>
+				<texto>Re</texto>
+			</respuesta>
+		</pregunta>	
+
+		<pregunta id="15">
+			<enunciado>La nota dibujada en el pentagrama corresponde a: </enunciado>
+			<imagen>45.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>Do</texto>
+			</respuesta>
+			
+			<respuesta correcta='false'>
+				<texto>Fa</texto>
+			</respuesta>
+                        <respuesta correcta='false'>
+				<texto>Re</texto>
+			</respuesta>
+			<respuesta correcta='true'>
+				<texto>Sol</texto>
 			</respuesta>
 		</pregunta>	
 		
@@ -333,4 +456,3 @@
 </temas>
 
 
->
