@@ -4,9 +4,12 @@
  * and open the template in the editor.
  */
 package co.edu.udea.musicus.entidades;
+
 import java.io.File;
+import java.util.ArrayList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -17,52 +20,71 @@ import org.w3c.dom.NodeList;
  * @author Big Computer
  */
 public class XmlRead {
-public static  void  main(String[] args) throws Exception{
 
-    
-    File xmFile = new File("src\\co\\edu\\udea\\musicus\\resources\\Preguntas.xml");
-    DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
-    DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
-    Document document = documentBuilder.parse(xmFile);
-    
-    NodeList list = document.getElementsByTagName("tema");
-    
-    for (int i = 0; i < list.getLength(); i++){
-        Node node =list.item(i);
+    static NodeList listaTemas;
+//    static NodeList listaPreguntas;
+//    static NodeList listaRespuesta;
+
+    public static void main(String[] args) throws Exception {
+
+        try {
+            File xmFile = new File("src\\co\\edu\\udea\\musicus\\resources\\Preguntas.xml");
+            DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
+            Document document = documentBuilder.parse(xmFile);
+            listaTemas = document.getElementsByTagName("tema");
+
+        } catch (ParserConfigurationException ex) {
+            System.out.println(ex);
+        }
+        getTemas();
+
         
-        if(node.getNodeType() == Node.ELEMENT_NODE){
-            Element element = (Element)node;
-           System.out.println("Tema de Estudio  " + element.getAttribute("id"));
-           
-           NodeList list2= element.getChildNodes();
-             for (int j = 0; j < list2.getLength(); j++){
-            Node node2 =list2.item(j);  
-            if(node2.getNodeType() == Node.ELEMENT_NODE){
-            Element element2 = (Element)node2;
-//            System.out.println("pregunta");
-            System.out.println(element2.getAttribute("id"));
-            System.out.println(element2.getElementsByTagName("enunciado").item(0).getTextContent());
-            System.out.println(element2.getElementsByTagName("respuesta").item(0).getTextContent());
-            System.out.println(element2.getElementsByTagName("respuesta").item(1).getTextContent());
-            System.out.println(element2.getElementsByTagName("respuesta").item(2).getTextContent());
-            System.out.println(element2.getElementsByTagName("respuesta").item(3).getTextContent());
-          
-//            NodeList list3= element.getChildNodes();
-//            Node node3 =list3.item(j);  
-//            if(node3.getNodeType() == Node.ELEMENT_NODE){
-//            Element element3 = (Element)node3;
-//            System.out.println(element3.getAttribute("enunciado"));
-//            System.out.println("Enunciado  " + element2.getAttributeNode("enunciado"));
-            
-            
-//            }
-//                    
-//                    
+    }
+
+    public static ArrayList<Tema> getTemas() {
+        ArrayList<Tema> temas = new ArrayList<>();
+        Tema tema = null;
+        Pregunta pregunta = null;
+        Respuesta respuesta = null;
+        
+
+        for (int i = 0; i < listaTemas.getLength(); i++) {
+            Node nodoTemas = listaTemas.item(i);
+            if (nodoTemas.getNodeType() == Node.ELEMENT_NODE) {
+                
+                Element elTema = (Element) nodoTemas;
+                tema = new Tema();
+                tema.setId(elTema.getAttribute("id"));
+                NodeList listaPreguntas = elTema.getElementsByTagName("pregunta");
+
+                for (int j = 0; j < listaPreguntas.getLength(); j++) {
+                    Node nodoPreguntas = listaPreguntas.item(j);
+                    if (nodoPreguntas.getNodeType() == Node.ELEMENT_NODE) {
+                        Element elPregunta = (Element) nodoPreguntas;
+
+                        pregunta = new Pregunta();
+                        pregunta.setId(elPregunta.getAttribute("id"));
+                        pregunta.setEnunciado(elPregunta.getElementsByTagName("enunciado").item(0).getTextContent());
+
+                        NodeList listaRespuestas = elPregunta.getElementsByTagName("respuesta");
+
+                        int respuestas = listaRespuestas.getLength();
+
+                        for (int k = 0; k < respuestas; k++) {
+                            respuesta = new Respuesta();
+                            respuesta.setTexto(elPregunta.getElementsByTagName("respuesta").item(k).getTextContent());
+                            respuesta.setCorrecta(elPregunta.getElementsByTagName("respuesta").item(k).getAttributes().getNamedItem("correcta").getTextContent());
+                            pregunta.getRespuestas().add(respuesta);
+                        }
+
                     }
-        }    
-        
-    
-}}
-            
-            
-}}
+                    tema.getPreguntas().add(pregunta);
+                }
+            }
+            temas.add(tema);
+        }
+        return temas;
+
+    }
+}
