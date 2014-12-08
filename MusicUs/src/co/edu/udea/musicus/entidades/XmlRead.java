@@ -28,7 +28,7 @@ public class XmlRead {
     public static void main(String[] args) throws Exception {
 
         try {
-            File xmFile = new File("src\\co\\edu\\udea\\musicus\\resources\\Preguntas.xml");
+            File xmFile = new File("Preguntas.xml");
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
             Document document = documentBuilder.parse(xmFile);
@@ -37,9 +37,8 @@ public class XmlRead {
         } catch (ParserConfigurationException ex) {
             System.out.println(ex);
         }
-        getTemas();
+        System.out.println("" + getTemas().toString());
 
-        
     }
 
     public static ArrayList<Tema> getTemas() {
@@ -47,12 +46,11 @@ public class XmlRead {
         Tema tema = null;
         Pregunta pregunta = null;
         Respuesta respuesta = null;
-        
 
         for (int i = 0; i < listaTemas.getLength(); i++) {
             Node nodoTemas = listaTemas.item(i);
             if (nodoTemas.getNodeType() == Node.ELEMENT_NODE) {
-                
+
                 Element elTema = (Element) nodoTemas;
                 tema = new Tema();
                 tema.setId(elTema.getAttribute("id"));
