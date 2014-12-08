@@ -2,7 +2,6 @@
 <temas>
 	<tema id="Pentagrama">
 		<pregunta id="1">
-			
 			<enunciado>Observa con cuidado este pentagrama, dinos si esta bien Dibujado?</enunciado>
 			<imagen>11.jpg</imagen>
 			<respuesta correcta="true">
@@ -17,7 +16,6 @@
 			<respuesta correcta='false'>
 				<texto>Deberia tener 5 espacios</texto>
 			</respuesta>
-						
 		</pregunta>	
 				
 		<pregunta id="2">
@@ -52,8 +50,8 @@
 			<respuesta correcta='false'>
 				<texto>Deberia tener 5 espacios</texto>
 			</respuesta>
-		</pregunta>	
-	</tema>
+		</pregunta>
+        </tema>
 	
 	<tema id="Claves">
 		<pregunta id="1">
@@ -158,7 +156,7 @@
 			</respuesta>
 		</pregunta>
 		
-			<pregunta id="7">
+                <pregunta id="7">
 		  	<enunciado>Observa con atencion la siguiente clave y di cual es</enunciado>
 			<imagen>27.jpg</imagen>
 			<respuesta correcta='false'>
@@ -175,7 +173,7 @@
 			</respuesta>
 		</pregunta>
 		
-			<pregunta id="8">
+		<pregunta id="8">
 		  	<enunciado>Observa con atencion la siguiente clave y di cual es</enunciado>
 			<imagen>28.jpg</imagen>
 			<respuesta correcta='false'>
@@ -451,7 +449,6 @@
 				<texto>Sol</texto>
 			</respuesta>
 		</pregunta>	
-		
 	</tema>
 </temas>
 
