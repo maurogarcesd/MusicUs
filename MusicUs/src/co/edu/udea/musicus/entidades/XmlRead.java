@@ -22,8 +22,6 @@ import org.w3c.dom.NodeList;
 public class XmlRead {
 
     static NodeList listaTemas;
-//    static NodeList listaPreguntas;
-//    static NodeList listaRespuesta;
 
     public static void main(String[] args) throws Exception {
 
@@ -37,7 +35,7 @@ public class XmlRead {
         } catch (ParserConfigurationException ex) {
             System.out.println(ex);
         }
-        System.out.println("" + getTemas().toString());
+        
 
     }
 
