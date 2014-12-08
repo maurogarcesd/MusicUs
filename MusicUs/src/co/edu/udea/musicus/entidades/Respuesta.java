@@ -7,10 +7,39 @@ package co.edu.udea.musicus.entidades;
  */
 public class Respuesta {
 
-	private boolean correcta;
+	private String correcta;
+        private String texto;
 
 	public Respuesta(){
 
 	}
+
+    /**
+     * @return the correcta
+     */
+    public String isCorrecta() {
+        return correcta;
+    }
+
+    /**
+     * @param correcta the correcta to set
+     */
+    public void setCorrecta(String correcta) {
+        this.correcta = correcta;
+    }
+
+    /**
+     * @return the texto
+     */
+    public String getTexto() {
+        return texto;
+    }
+
+    /**
+     * @param texto the texto to set
+     */
+    public void setTexto(String texto) {
+        this.texto = texto;
+    }
 
 }
