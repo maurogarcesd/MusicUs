@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
 <temas>
-	<tema id="Pentagrama">
+	<tema id="Pentagrama" resumen="En este nivel conociste el pentagrama y su correcta distribución. Aprendiste donde van dibujadas las claves y cuantas claves puedes dibujar. El pentagrama es el lugar donde se escriben las notas y todos los demás signos musicales, está formado por cinco líneas y cuatro espacios o interlíneas, que se enumeran de abajo hacia arriba. Las líneas son horizontales, rectas y equidistantes. Por todo tu esfuerzo e inteligencia acabas de recibir el reconocimiento de Mozart.">
 		<pregunta id="1">
 			
 			<enunciado>Observa con cuidado este pentagrama, dinos si esta bien Dibujado?</enunciado>
@@ -55,7 +55,7 @@
 		</pregunta>	
 	</tema>
 	
-	<tema id="Claves">
+	<tema id="Claves" resumen="Ahora si vas avanzando para ser un gran músico. Ya conoces las claves y las líneas donde puedes dibujarlas y podrás empezar a hacer tus primeras composiciones en el pentagrama... Felicitaciones. La función de la clave es asociar las notas musicales con las líneas o espacios del pentagrama. Una clave asocia una nota en concreto con una línea del pentagrama, de manera que a las notas siguientes les corresponden los espacios y líneas adyacentes. Existen tres símbolos distintos para representar a las distintas claves, la clave de sol, la clave de fa y la clave de do, que llevan el nombre de la nota que designan a una línea de los pentagramas. Aprendimos en este nivel  a localizar las notas en el pentagrama utilizando las claves de Sol, Fa y Do. Haz superado el nivel 2  y acabas de recibir el reconocimiento de Beethoven.">
 		<pregunta id="1">
 			<enunciado>Identifica la siguiente clave</enunciado>
 			<imagen>21.jpg</imagen>
@@ -193,7 +193,7 @@
 		</pregunta>
 	</tema>
 	
-	<tema id="Notas">
+	<tema id="Notas" resumen="">
 		<pregunta id="1">
 			<enunciado>Identifica la nota musical que se encuentra dibujada en el siguiente pentagrama</enunciado>
 			<imagen>31.jpg</imagen>

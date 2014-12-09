@@ -48,6 +48,8 @@ public class PersistenceXML {
                 Element elTema = (Element) nodoTemas;
                 tema = new Tema();
                 tema.setId(elTema.getAttribute("id"));
+                tema.setResumen(elTema.getAttribute("resumen"));
+
                 NodeList listaPreguntas = elTema.getElementsByTagName("pregunta");
 
                 for (int j = 0; j < listaPreguntas.getLength(); j++) {
