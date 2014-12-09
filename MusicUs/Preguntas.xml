@@ -21,19 +21,19 @@
 		</pregunta>	
 				
 		<pregunta id="2">
-			<enunciado>Observa con cuidado este pentagrama, dinos si esta bien Dibujado? repetidaaaaa</enunciado>
-			<imagen>11.jpg</imagen>
+			<enunciado>Las claves se deben se deben dibujar en</enunciado>
+			<imagen>12.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>El centro de el pentagrama</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Debajo del pentagrama</texto>
+			</respuesta>
+			<respuesta correcta='false'>
+				<texto>Arriba del pentagrama</texto>
+			</respuesta>
 			<respuesta correcta='true'>
-				<texto>Esta mal dibujado debe tener 5 lineas</texto>
-			</respuesta>
-			<respuesta correcta='false'>
-				<texto>Esta dibujado correctamente</texto>
-			</respuesta>
-			<respuesta correcta='false'>
-				<texto>Esta mal dibujado</texto>
-			</respuesta>
-			<respuesta correcta='false'>
-				<texto>Deberia tener 5 espacios</texto>
+				<texto>Al principio del pentagrama</texto>
 			</respuesta>
 		</pregunta>	
 		
