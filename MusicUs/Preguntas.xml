@@ -21,7 +21,7 @@
 		</pregunta>	
 				
 		<pregunta id="2">
-			<enunciado>Las claves se deben se deben dibujar en</enunciado>
+			<enunciado>Las claves se deben dibujar en</enunciado>
 			<imagen>12.jpg</imagen>
 			<respuesta correcta='false'>
 				<texto>El centro de el pentagrama</texto>
@@ -39,7 +39,7 @@
 		
 		<pregunta id="3">
 			<enunciado>Cuantas claves puedo dibujar en el pentagrama:</enunciado>
-			<imagen>11.jpg</imagen>
+			<imagen>13.jpg</imagen>
 			<respuesta correcta='false'>
 				<texto>Se pueden dibujar 5 claves</texto>
 			</respuesta>
