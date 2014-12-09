@@ -290,7 +290,7 @@ public class Ventana extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanelInicio.add(jLabelUsuario, gridBagConstraints);
 
-        jTextFieldUsuario.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
+        jTextFieldUsuario.setFont(new java.awt.Font("Ubuntu", 0, 16)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 1;
@@ -331,7 +331,7 @@ public class Ventana extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanelInicio.add(jLabelNivel, gridBagConstraints);
 
-        jComboBoxNiveles.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
+        jComboBoxNiveles.setFont(new java.awt.Font("Ubuntu", 0, 16)); // NOI18N
         jComboBoxNiveles.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccione...", "Nivel 1", "Nivel 2", "Nivel 3" }));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -361,11 +361,12 @@ public class Ventana extends javax.swing.JFrame {
 
         getContentPane().add(jPanelInicio, "card2");
 
-        jPanelNivel.setBorder(javax.swing.BorderFactory.createTitledBorder("Nivel: 1/2/3 - Tema: Pentagrama/Claves/Notas"));
+        jPanelNivel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nivel: 1/2/3 - Tema: Pentagrama/Claves/Notas", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Ubuntu", 1, 12))); // NOI18N
         jPanelNivel.setLayout(new java.awt.CardLayout());
 
         jPanelPregunta.setLayout(new java.awt.GridBagLayout());
 
+        jLabelTextoPregunta.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
         jLabelTextoPregunta.setText("¿Texto de la pregunta?");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -376,6 +377,8 @@ public class Ventana extends javax.swing.JFrame {
         gridBagConstraints.weighty = 3.0;
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanelPregunta.add(jLabelTextoPregunta, gridBagConstraints);
+
+        jLabelImagenPregunta.setFont(new java.awt.Font("Ubuntu", 1, 12)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
@@ -388,6 +391,7 @@ public class Ventana extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanelPregunta.add(jLabelImagenPregunta, gridBagConstraints);
 
+        jButtonEnviarRespuesta.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
         jButtonEnviarRespuesta.setText("Enviar");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -399,10 +403,11 @@ public class Ventana extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanelPregunta.add(jButtonEnviarRespuesta, gridBagConstraints);
 
-        jPanelRespuestas.setBorder(javax.swing.BorderFactory.createTitledBorder("Respuestas"));
+        jPanelRespuestas.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Respuestas", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Ubuntu", 1, 12))); // NOI18N
         jPanelRespuestas.setLayout(new java.awt.GridBagLayout());
 
         buttonGroupRespuestas.add(jRadioButtonRespuestaA);
+        jRadioButtonRespuestaA.setFont(new java.awt.Font("Ubuntu", 0, 16)); // NOI18N
         jRadioButtonRespuestaA.setText("A. Texto Respuesta A");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -415,6 +420,7 @@ public class Ventana extends javax.swing.JFrame {
         jPanelRespuestas.add(jRadioButtonRespuestaA, gridBagConstraints);
 
         buttonGroupRespuestas.add(jRadioButtonRespuestaB);
+        jRadioButtonRespuestaB.setFont(new java.awt.Font("Ubuntu", 0, 16)); // NOI18N
         jRadioButtonRespuestaB.setText("B. Texto Respuesta B");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -427,6 +433,7 @@ public class Ventana extends javax.swing.JFrame {
         jPanelRespuestas.add(jRadioButtonRespuestaB, gridBagConstraints);
 
         buttonGroupRespuestas.add(jRadioButtonRespuestaC);
+        jRadioButtonRespuestaC.setFont(new java.awt.Font("Ubuntu", 0, 16)); // NOI18N
         jRadioButtonRespuestaC.setText("C. Texto Respuesta C");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -439,6 +446,7 @@ public class Ventana extends javax.swing.JFrame {
         jPanelRespuestas.add(jRadioButtonRespuestaC, gridBagConstraints);
 
         buttonGroupRespuestas.add(jRadioButtonRespuestaD);
+        jRadioButtonRespuestaD.setFont(new java.awt.Font("Ubuntu", 0, 16)); // NOI18N
         jRadioButtonRespuestaD.setText("D. Texto Respuesta D");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -464,6 +472,7 @@ public class Ventana extends javax.swing.JFrame {
 
         jPanelResumen.setLayout(new java.awt.GridBagLayout());
 
+        jLabelResultado.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
         jLabelResultado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelResultado.setText("Texto resultado nivel");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -479,6 +488,7 @@ public class Ventana extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanelResumen.add(jLabelResultado, gridBagConstraints);
 
+        jLabelTextoPromedio.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
         jLabelTextoPromedio.setText("Promedio:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -492,6 +502,7 @@ public class Ventana extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanelResumen.add(jLabelTextoPromedio, gridBagConstraints);
 
+        jButtonMenuPrincipal.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
         jButtonMenuPrincipal.setText("Menu principal");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -508,6 +519,7 @@ public class Ventana extends javax.swing.JFrame {
 
         jTextAreaResumen.setEditable(false);
         jTextAreaResumen.setColumns(20);
+        jTextAreaResumen.setFont(new java.awt.Font("Ubuntu", 0, 16)); // NOI18N
         jTextAreaResumen.setLineWrap(true);
         jTextAreaResumen.setRows(5);
         jTextAreaResumen.setWrapStyleWord(true);
@@ -527,6 +539,8 @@ public class Ventana extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanelResumen.add(jScrollPaneTextAreaResumen, gridBagConstraints);
 
+        jLabelValorPromedio.setFont(new java.awt.Font("Ubuntu", 0, 16)); // NOI18N
+        jLabelValorPromedio.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabelValorPromedio.setText("correctas / total");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -537,16 +551,21 @@ public class Ventana extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanelResumen.add(jLabelValorPromedio, gridBagConstraints);
+
+        jLabelImagenPersonaje.setFont(new java.awt.Font("Ubuntu", 1, 12)); // NOI18N
+        jLabelImagenPersonaje.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.ipadx = 50;
-        gridBagConstraints.ipady = 50;
+        gridBagConstraints.ipadx = 1;
+        gridBagConstraints.ipady = 1;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
         jPanelResumen.add(jLabelImagenPersonaje, gridBagConstraints);
 
+        jLabelTextoReconocimiento.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
+        jLabelTextoReconocimiento.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelTextoReconocimiento.setText("Has ganado reconocimiento de personaje");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
