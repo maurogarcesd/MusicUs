@@ -38,19 +38,19 @@
 		</pregunta>	
 		
 		<pregunta id="3">
-			<enunciado>Observa con cuidado este pentagrama, dinos si esta bien Dibujado? repetidaaaaa</enunciado>
+			<enunciado>Cuantas claves puedo dibujar en el pentagrama:</enunciado>
 			<imagen>11.jpg</imagen>
+			<respuesta correcta='false'>
+				<texto>Se pueden dibujar 5 claves</texto>
+			</respuesta>
 			<respuesta correcta='true'>
-				<texto>Esta mal dibujado debe tener 5 lineas</texto>
+				<texto>Se pueden dibujar solo 1 clave</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>Esta dibujado correctamente</texto>
+				<texto>Se pueden dibujar 3 claves</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>Esta mal dibujado</texto>
-			</respuesta>
-			<respuesta correcta='false'>
-				<texto>Deberia tener 5 espacios</texto>
+				<texto>Se pueden dibujar 2 claves</texto>
 			</respuesta>
 		</pregunta>	
 	</tema>
