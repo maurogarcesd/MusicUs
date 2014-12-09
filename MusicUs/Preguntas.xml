@@ -151,7 +151,7 @@
 				<texto>Clave de fa en cuarta</texto>
 			</respuesta>
 			<respuesta correcta='true'>
-				<texto>Clave de Do en primera</texto>
+				<texto>Clave de Sol en primera pero no se usa</texto>
 			</respuesta>
 			<respuesta correcta='false'>
 				<texto>Clave de do en tercera</texto>
@@ -162,16 +162,16 @@
 		  	<enunciado>Observa con atencion la siguiente clave y di cual es</enunciado>
 			<imagen>27.jpg</imagen>
 			<respuesta correcta='false'>
-				<texto>Clave de sol en cuarta</texto>
+				<texto>Clave de Sol en cuarta</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>Clave de fa en cuarta</texto>
+				<texto>Clave de Fa en cuarta</texto>
 			</respuesta>
-			<respuesta correcta='true'>
+			<respuesta correcta='false'>
 				<texto>Clave de Do en primera</texto>
 			</respuesta>
-			<respuesta correcta='false'>
-				<texto>Clave de do en tercera</texto>
+			<respuesta correcta='tue'>
+				<texto>Clave de Fa en tercera</texto>
 			</respuesta>
 		</pregunta>
 		
@@ -179,16 +179,16 @@
 		  	<enunciado>Observa con atencion la siguiente clave y di cual es</enunciado>
 			<imagen>28.jpg</imagen>
 			<respuesta correcta='false'>
-				<texto>Clave de sol en cuarta</texto>
+				<texto>Clave de Sol en cuarta</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>Clave de fa en cuarta</texto>
+				<texto>Clave de Fa en cuarta</texto>
 			</respuesta>
 			<respuesta correcta='true'>
-				<texto>Clave de Do en primera</texto>
+				<texto>Clave de Do en segunda</texto>
 			</respuesta>
 			<respuesta correcta='false'>
-				<texto>Clave de do en tercera</texto>
+				<texto>Clave de Do en tercera</texto>
 			</respuesta>
 		</pregunta>
 	</tema>
