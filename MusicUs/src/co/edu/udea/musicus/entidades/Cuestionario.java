@@ -9,10 +9,10 @@ import java.util.ArrayList;
  */
 public class Cuestionario {
 
-    private ArrayList<Pregunta> preguntas;
+    private final ArrayList<Pregunta> preguntas;
 
     public Cuestionario() {
-
+        preguntas = new ArrayList<>();
     }
 
     /**
@@ -21,5 +21,4 @@ public class Cuestionario {
     public ArrayList<Pregunta> getPreguntas() {
         return preguntas;
     }
-
 }

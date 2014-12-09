@@ -58,6 +58,7 @@ public class PersistenceXML {
                         pregunta = new Pregunta();
                         pregunta.setId(elPregunta.getAttribute("id"));
                         pregunta.setEnunciado(elPregunta.getElementsByTagName("enunciado").item(0).getTextContent());
+                        pregunta.setImagen(elPregunta.getElementsByTagName("imagen").item(0).getTextContent());
 
                         NodeList listaRespuestas = elPregunta.getElementsByTagName("respuesta");
 

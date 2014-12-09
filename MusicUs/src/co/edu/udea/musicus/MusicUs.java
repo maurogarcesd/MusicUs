@@ -1,6 +1,6 @@
 package co.edu.udea.musicus;
 
-import co.edu.udea.musicus.gui.Ventana;
+import co.edu.udea.musicus.entidades.Juego;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -17,7 +17,7 @@ public class MusicUs {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new Ventana();
+        new Juego();
     }
 
 }

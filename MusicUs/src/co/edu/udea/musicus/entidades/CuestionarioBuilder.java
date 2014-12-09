@@ -9,5 +9,5 @@ public interface CuestionarioBuilder {
 
     public void agregarPregunta();
 
-    public void getCuestionario();
+    public Cuestionario getCuestionario();
 }

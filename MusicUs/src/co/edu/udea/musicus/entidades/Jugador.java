@@ -9,16 +9,17 @@ import java.util.ArrayList;
 public class Jugador {
 
     private ArrayList<Fama> fama;
-    private Jugador instancia;
+    private static Jugador instancia;
     private String nombre;
     private int puntaje;
 
     private void Jugador() {
         fama = new ArrayList<>();
+        puntaje = 0;
     }
 
-    public Jugador getInstancia() {
-        if (this == null) {
+    public static Jugador getInstancia() {
+        if (instancia == null) {
             instancia = new Jugador();
             return instancia;
         } else {

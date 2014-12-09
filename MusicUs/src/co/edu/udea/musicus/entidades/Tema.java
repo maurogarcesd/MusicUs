@@ -14,7 +14,7 @@ public class Tema {
     private String resumen;
 
     public Tema() {
-
+        preguntas = new ArrayList<>();
     }
 
     /**

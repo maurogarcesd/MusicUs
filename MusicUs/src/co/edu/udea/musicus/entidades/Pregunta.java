@@ -7,14 +7,15 @@ import java.util.ArrayList;
  * @version 1.0
  * @created 08-dic-2014 17:01:57
  */
-public class Pregunta {
+public class Pregunta implements Cloneable {
 
     private String id;
     private String enunciado;
     private ArrayList<Respuesta> respuestas;
+    private String imagen;
 
     public Pregunta() {
-
+        respuestas = new ArrayList<>();
     }
 
     /**
@@ -50,5 +51,19 @@ public class Pregunta {
      */
     public void setId(String id) {
         this.id = id;
+    }
+
+    /**
+     * @return the imagen
+     */
+    public String getImagen() {
+        return imagen;
+    }
+
+    /**
+     * @param imagen the imagen to set
+     */
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
 }

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package co.edu.udea.musicus.gui;
 
 /**
@@ -10,20 +5,214 @@ package co.edu.udea.musicus.gui;
  * @author mateo1235
  */
 public class Ventana extends javax.swing.JFrame {
-    
-    private PanelNivel panelNivel;
-    private PanelInicio panelInicio;
 
     /**
      * Creates new form Ventana
      */
     public Ventana() {
         initComponents();
-        panelInicio = new PanelInicio();
-        panelNivel = new PanelNivel();
-        setContentPane(panelInicio);
-        setLocationRelativeTo(null);
-        setVisible(true);
+        getjPanelNivel().setVisible(false);
+        getjPanelResumen().setVisible(false);
+    }
+
+    /**
+     * @return the buttonGroupRespuestas
+     */
+    public javax.swing.ButtonGroup getButtonGroupRespuestas() {
+        return buttonGroupRespuestas;
+    }
+
+    /**
+     * @return the jButtonEnviarRespuesta
+     */
+    public javax.swing.JButton getjButtonEnviarRespuesta() {
+        return jButtonEnviarRespuesta;
+    }
+
+    /**
+     * @return the jButtonIniciar
+     */
+    public javax.swing.JButton getjButtonIniciar() {
+        return jButtonIniciar;
+    }
+
+    /**
+     * @return the jButtonMenuPrincipal
+     */
+    public javax.swing.JButton getjButtonMenuPrincipal() {
+        return jButtonMenuPrincipal;
+    }
+
+    /**
+     * @return the jButtonRegistrar
+     */
+    public javax.swing.JButton getjButtonRegistrar() {
+        return jButtonRegistrar;
+    }
+
+    /**
+     * @return the jComboBoxNiveles
+     */
+    public javax.swing.JComboBox getjComboBoxNiveles() {
+        return jComboBoxNiveles;
+    }
+
+    /**
+     * @return the jLabelImagenPersonaje
+     */
+    public javax.swing.JLabel getjLabelImagenPersonaje() {
+        return jLabelImagenPersonaje;
+    }
+
+    /**
+     * @return the jLabelImagenPregunta
+     */
+    public javax.swing.JLabel getjLabelImagenPregunta() {
+        return jLabelImagenPregunta;
+    }
+
+    /**
+     * @return the jLabelNivel
+     */
+    public javax.swing.JLabel getjLabelNivel() {
+        return jLabelNivel;
+    }
+
+    /**
+     * @return the jLabelResultado
+     */
+    public javax.swing.JLabel getjLabelResultado() {
+        return jLabelResultado;
+    }
+
+    /**
+     * @return the jLabelTextoPregunta
+     */
+    public javax.swing.JLabel getjLabelTextoPregunta() {
+        return jLabelTextoPregunta;
+    }
+
+    /**
+     * @return the jLabelTextoPromedio
+     */
+    public javax.swing.JLabel getjLabelTextoPromedio() {
+        return jLabelTextoPromedio;
+    }
+
+    /**
+     * @return the jLabelTextoReconocimiento
+     */
+    public javax.swing.JLabel getjLabelTextoReconocimiento() {
+        return jLabelTextoReconocimiento;
+    }
+
+    /**
+     * @return the jLabelTituloJuego
+     */
+    public javax.swing.JLabel getjLabelTituloJuego() {
+        return jLabelTituloJuego;
+    }
+
+    /**
+     * @return the jLabelUsuario
+     */
+    public javax.swing.JLabel getjLabelUsuario() {
+        return jLabelUsuario;
+    }
+
+    /**
+     * @return the jLabelValorPromedio
+     */
+    public javax.swing.JLabel getjLabelValorPromedio() {
+        return jLabelValorPromedio;
+    }
+
+    /**
+     * @return the jPanelInicio
+     */
+    public javax.swing.JPanel getjPanelInicio() {
+        return jPanelInicio;
+    }
+
+    /**
+     * @return the jPanelNivel
+     */
+    public javax.swing.JPanel getjPanelNivel() {
+        return jPanelNivel;
+    }
+
+    /**
+     * @return the jPanelPregunta
+     */
+    public javax.swing.JPanel getjPanelPregunta() {
+        return jPanelPregunta;
+    }
+
+    /**
+     * @return the jPanelRespuestas
+     */
+    public javax.swing.JPanel getjPanelRespuestas() {
+        return jPanelRespuestas;
+    }
+
+    /**
+     * @return the jPanelResumen
+     */
+    public javax.swing.JPanel getjPanelResumen() {
+        return jPanelResumen;
+    }
+
+    /**
+     * @return the jRadioButtonRespuestaA
+     */
+    public javax.swing.JRadioButton getjRadioButtonRespuestaA() {
+        return jRadioButtonRespuestaA;
+    }
+
+    /**
+     * @return the jRadioButtonRespuestaB
+     */
+    public javax.swing.JRadioButton getjRadioButtonRespuestaB() {
+        return jRadioButtonRespuestaB;
+    }
+
+    /**
+     * @return the jRadioButtonRespuestaC
+     */
+    public javax.swing.JRadioButton getjRadioButtonRespuestaC() {
+        return jRadioButtonRespuestaC;
+    }
+
+    /**
+     * @return the jRadioButtonRespuestaD
+     */
+    public javax.swing.JRadioButton getjRadioButtonRespuestaD() {
+        return jRadioButtonRespuestaD;
+    }
+
+    /**
+     * @return the jScrollPaneTextAreaResumen
+     */
+    public javax.swing.JScrollPane getjScrollPaneTextAreaResumen() {
+        return jScrollPaneTextAreaResumen;
+    }
+
+    /**
+     * @return the jTextAreaResumen
+     */
+    public javax.swing.JTextArea getjTextAreaResumen() {
+        return jTextAreaResumen;
+    }
+
+    /**
+     * @return the jTextFieldUsuario
+     */
+    public javax.swing.JTextField getjTextFieldUsuario() {
+        return jTextFieldUsuario;
+    }
+    
+    public void setPanelNivelBorderText(String s) {
+        jPanelNivel.setBorder(javax.swing.BorderFactory.createTitledBorder(s));
     }
 
     /**
@@ -36,13 +225,375 @@ public class Ventana extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
+        buttonGroupRespuestas = new javax.swing.ButtonGroup();
+        jPanelInicio = new javax.swing.JPanel();
+        jLabelTituloJuego = new javax.swing.JLabel();
+        jLabelUsuario = new javax.swing.JLabel();
+        jTextFieldUsuario = new javax.swing.JTextField();
+        jButtonIniciar = new javax.swing.JButton();
+        jLabelNivel = new javax.swing.JLabel();
+        jComboBoxNiveles = new javax.swing.JComboBox();
+        jButtonRegistrar = new javax.swing.JButton();
+        jPanelNivel = new javax.swing.JPanel();
+        jPanelPregunta = new javax.swing.JPanel();
+        jLabelTextoPregunta = new javax.swing.JLabel();
+        jLabelImagenPregunta = new javax.swing.JLabel();
+        jButtonEnviarRespuesta = new javax.swing.JButton();
+        jPanelRespuestas = new javax.swing.JPanel();
+        jRadioButtonRespuestaA = new javax.swing.JRadioButton();
+        jRadioButtonRespuestaB = new javax.swing.JRadioButton();
+        jRadioButtonRespuestaC = new javax.swing.JRadioButton();
+        jRadioButtonRespuestaD = new javax.swing.JRadioButton();
+        jPanelResumen = new javax.swing.JPanel();
+        jLabelResultado = new javax.swing.JLabel();
+        jLabelTextoPromedio = new javax.swing.JLabel();
+        jButtonMenuPrincipal = new javax.swing.JButton();
+        jScrollPaneTextAreaResumen = new javax.swing.JScrollPane();
+        jTextAreaResumen = new javax.swing.JTextArea();
+        jLabelValorPromedio = new javax.swing.JLabel();
+        jLabelImagenPersonaje = new javax.swing.JLabel();
+        jLabelTextoReconocimiento = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("MusicUs");
         getContentPane().setLayout(new java.awt.CardLayout());
+
+        jPanelInicio.setLayout(new java.awt.GridBagLayout());
+
+        jLabelTituloJuego.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        jLabelTituloJuego.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelTituloJuego.setText("MUSICUS");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 1;
+        gridBagConstraints.ipady = 20;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelInicio.add(jLabelTituloJuego, gridBagConstraints);
+
+        jLabelUsuario.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
+        jLabelUsuario.setText("Jugador:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 1;
+        gridBagConstraints.ipady = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelInicio.add(jLabelUsuario, gridBagConstraints);
+
+        jTextFieldUsuario.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 1;
+        gridBagConstraints.ipady = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelInicio.add(jTextFieldUsuario, gridBagConstraints);
+
+        jButtonIniciar.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
+        jButtonIniciar.setText("Iniciar");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 1;
+        gridBagConstraints.ipady = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelInicio.add(jButtonIniciar, gridBagConstraints);
+
+        jLabelNivel.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
+        jLabelNivel.setText("Nivel:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 1;
+        gridBagConstraints.ipady = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelInicio.add(jLabelNivel, gridBagConstraints);
+
+        jComboBoxNiveles.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
+        jComboBoxNiveles.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccione...", "Nivel 1", "Nivel 2", "Nivel 3" }));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 1;
+        gridBagConstraints.ipady = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelInicio.add(jComboBoxNiveles, gridBagConstraints);
+
+        jButtonRegistrar.setFont(new java.awt.Font("Ubuntu", 1, 16)); // NOI18N
+        jButtonRegistrar.setText("Registrar");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 1;
+        gridBagConstraints.ipady = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelInicio.add(jButtonRegistrar, gridBagConstraints);
+
+        getContentPane().add(jPanelInicio, "card2");
+
+        jPanelNivel.setBorder(javax.swing.BorderFactory.createTitledBorder("Nivel: 1/2/3 - Tema: Pentagrama/Claves/Notas"));
+        jPanelNivel.setLayout(new java.awt.CardLayout());
+
+        jPanelPregunta.setLayout(new java.awt.GridBagLayout());
+
+        jLabelTextoPregunta.setText("¿Texto de la pregunta?");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 5.0;
+        gridBagConstraints.weighty = 3.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelPregunta.add(jLabelTextoPregunta, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 50;
+        gridBagConstraints.ipady = 50;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 5.0;
+        gridBagConstraints.weighty = 3.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelPregunta.add(jLabelImagenPregunta, gridBagConstraints);
+
+        jButtonEnviarRespuesta.setText("Enviar");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 2.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelPregunta.add(jButtonEnviarRespuesta, gridBagConstraints);
+
+        jPanelRespuestas.setBorder(javax.swing.BorderFactory.createTitledBorder("Respuestas"));
+        jPanelRespuestas.setLayout(new java.awt.GridBagLayout());
+
+        buttonGroupRespuestas.add(jRadioButtonRespuestaA);
+        jRadioButtonRespuestaA.setText("A. Texto Respuesta A");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 2.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelRespuestas.add(jRadioButtonRespuestaA, gridBagConstraints);
+
+        buttonGroupRespuestas.add(jRadioButtonRespuestaB);
+        jRadioButtonRespuestaB.setText("B. Texto Respuesta B");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 2.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelRespuestas.add(jRadioButtonRespuestaB, gridBagConstraints);
+
+        buttonGroupRespuestas.add(jRadioButtonRespuestaC);
+        jRadioButtonRespuestaC.setText("C. Texto Respuesta C");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 2.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelRespuestas.add(jRadioButtonRespuestaC, gridBagConstraints);
+
+        buttonGroupRespuestas.add(jRadioButtonRespuestaD);
+        jRadioButtonRespuestaD.setText("D. Texto Respuesta D");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 2.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelRespuestas.add(jRadioButtonRespuestaD, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weighty = 7.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelPregunta.add(jPanelRespuestas, gridBagConstraints);
+
+        jPanelNivel.add(jPanelPregunta, "card4");
+
+        jPanelResumen.setLayout(new java.awt.GridBagLayout());
+
+        jLabelResultado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelResultado.setText("Texto resultado nivel");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 1;
+        gridBagConstraints.ipady = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelResumen.add(jLabelResultado, gridBagConstraints);
+
+        jLabelTextoPromedio.setText("Promedio:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 1;
+        gridBagConstraints.ipady = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelResumen.add(jLabelTextoPromedio, gridBagConstraints);
+
+        jButtonMenuPrincipal.setText("Menu principal");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 1;
+        gridBagConstraints.ipady = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelResumen.add(jButtonMenuPrincipal, gridBagConstraints);
+
+        jTextAreaResumen.setEditable(false);
+        jTextAreaResumen.setColumns(20);
+        jTextAreaResumen.setLineWrap(true);
+        jTextAreaResumen.setRows(5);
+        jTextAreaResumen.setWrapStyleWord(true);
+        jScrollPaneTextAreaResumen.setViewportView(jTextAreaResumen);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.gridheight = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 1;
+        gridBagConstraints.ipady = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelResumen.add(jScrollPaneTextAreaResumen, gridBagConstraints);
+
+        jLabelValorPromedio.setText("correctas / total");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelResumen.add(jLabelValorPromedio, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipadx = 50;
+        gridBagConstraints.ipady = 50;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelResumen.add(jLabelImagenPersonaje, gridBagConstraints);
+
+        jLabelTextoReconocimiento.setText("Has ganado reconocimiento de personaje");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(3, 3, 3, 3);
+        jPanelResumen.add(jLabelTextoReconocimiento, gridBagConstraints);
+
+        jPanelNivel.add(jPanelResumen, "card2");
+
+        getContentPane().add(jPanelNivel, "card3");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroupRespuestas;
+    private javax.swing.JButton jButtonEnviarRespuesta;
+    private javax.swing.JButton jButtonIniciar;
+    private javax.swing.JButton jButtonMenuPrincipal;
+    private javax.swing.JButton jButtonRegistrar;
+    private javax.swing.JComboBox jComboBoxNiveles;
+    private javax.swing.JLabel jLabelImagenPersonaje;
+    private javax.swing.JLabel jLabelImagenPregunta;
+    private javax.swing.JLabel jLabelNivel;
+    private javax.swing.JLabel jLabelResultado;
+    private javax.swing.JLabel jLabelTextoPregunta;
+    private javax.swing.JLabel jLabelTextoPromedio;
+    private javax.swing.JLabel jLabelTextoReconocimiento;
+    private javax.swing.JLabel jLabelTituloJuego;
+    private javax.swing.JLabel jLabelUsuario;
+    private javax.swing.JLabel jLabelValorPromedio;
+    private javax.swing.JPanel jPanelInicio;
+    private javax.swing.JPanel jPanelNivel;
+    private javax.swing.JPanel jPanelPregunta;
+    private javax.swing.JPanel jPanelRespuestas;
+    private javax.swing.JPanel jPanelResumen;
+    private javax.swing.JRadioButton jRadioButtonRespuestaA;
+    private javax.swing.JRadioButton jRadioButtonRespuestaB;
+    private javax.swing.JRadioButton jRadioButtonRespuestaC;
+    private javax.swing.JRadioButton jRadioButtonRespuestaD;
+    private javax.swing.JScrollPane jScrollPaneTextAreaResumen;
+    private javax.swing.JTextArea jTextAreaResumen;
+    private javax.swing.JTextField jTextFieldUsuario;
     // End of variables declaration//GEN-END:variables
+
 }
